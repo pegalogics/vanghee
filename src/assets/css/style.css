@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body{font-family: 'Open Sans', sans-serif; background: #F9F8F4;}
+.bg-light{background: rgba(196, 196, 196, 0.3) !important;}
+.bg-extra-light{background: #F9F8F4 !important;}
+.text-blue{color: rgba(0, 44, 111, 0.84);}
+.text-orange{color: #F47B01 !important;}
+
+header{background: #F9F8F4;}
+.main-menu a{color: rgba(0, 0, 0, 0.64); margin: 10px;  font-weight: 600;}
+.main-menu a:hover, .main-menu a:focus, .main-menu a.active{color: #002C6F; border-bottom: 1px solid #002C6F;}
+.main-menu a.bordered-btn, .bordered-btn{background: #fff; color: #FF8000; border: 1px solid; border-radius: 10px; min-width: 110px; text-align: center;}
+.main-menu a.bordered-btn:hover, .main-menu a.bordered-btn:focus, .bordered-btn:hover, .bordered-btn:focus{text-decoration: none; background: #FF8000; color: #fff;}
+.main-menu a.solid-btn, .solid-btn{background: #FF8000; color: #fff; border: 1px solid #FF8000; border-radius: 10px; min-width: 110px; text-align: center;}
+.solid-btn:hover, .solid-btn:focus{color: #fff; text-decoration: none;}
+
+.form-box{ padding: 30px 20px 20px;}
+.form-box .form-control{background: #eee; border-color: #eee;}
+.form-box p{font-size: 15px;}
+.form-box a{text-decoration: none !important; border-bottom: none !important;}
+
+/* Slider CSS */
+#slider .carousel-indicators{bottom: 80px;}
+.carousel-indicators li{height: 10px; width: 10px; border-radius: 50%; cursor: pointer;}
+
+.cta-top { position: relative; margin-top: -80px;}
+.cta-top .cta-box{box-shadow: 0 16px 40px 0 rgba(154, 170, 207, 0.12);}
+.cta-top figure figcaption{font-weight: 600; color: #002C6F;}
+
+div#aboutCarousel .carousel-inner { border-radius: 15px;}
+
+.features, .contact, .news {background: rgba(196, 196, 196, 0.3)}
+.features h3, .contact h3 { font-size: 18px;  font-weight: 600; margin-bottom: 15px;}
+.features .col-inner{border-radius: 15px; box-shadow: 0px 0px 10px rgb(0 0 0 / 5%);}
+
+.why-v .col-inner{border: 2px solid #fff;}
+.why-v .col-inner:hover{border-color: #F47B01;}
+.why-v .col-inner h6{font-weight: 600;}
+.why-v .col-inner ul li{padding-left: 25px; background: url(../images/check.png) no-repeat; background-size: 18px; background-position: left top 10px; color: #4F5665;  font-size: 15px;  line-height: 30px;}
+
+.partners-img img{max-width: 20%; padding: 15px;}
+
+.testimonial .owl-carousel .owl-nav, .news .owl-carousel .owl-nav{display: block !important;}
+.testimonial .owl-carousel .owl-item, .news .owl-carousel .owl-item { padding: 10px;}
+.testimonial .owl-carousel .owl-item > div, .news .owl-carousel .owl-item > div {
+  box-shadow: 0px 0px 7px rgb(0 0 0 / 10%); border-radius: 15px;
+}
+.testimonial .owl-prev, .testimonial .owl-next, .news .owl-prev, .news .owl-next {
+  position: absolute;
+  left: -40px;
+  background: transparent !important;
+  color: #ff8000 !important;
+  border: 1px solid #FF8000;
+  border-radius: 50% !important;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.testimonial .owl-next, .news .owl-next {left: auto; right: -40px;}
+
+.contact .address, .contact form{border-top: 3px solid #F47B01; border-bottom: 3px solid #F47B01;}
+.contact h6{font-weight: 600; margin-bottom: 5px; margin-top: 7px;}
+.contact small{color: rgba(0, 0, 0, 0.64); margin-bottom: 0;}
+.contact img{width: 50px; height: 50px;}
+.contact form textarea{height: 215px; resize: none;}
+
+footer{background: rgba(196, 196, 196, 0.6); font-size: 14px; color: rgba(0, 0, 0, 0.64);}
+footer a{color:rgba(0, 0, 0, 0.64);}
+footer a:hover, footer a:focus{text-decoration: none; color: #000;}
+footer p{line-height: 24px;}
+footer h5{font-weight: 600; font-size: 16px; color: #000;}
+footer ul li{line-height: 36px;}
+footer .social a {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #F47B01; margin-right: 10px;
+}
+footer .social a:last-child {margin-right: 0;}
+footer .social a:hover, footer .social a:focus {background: #F47B01; color: #fff;;}
+
+
+/* About Page Styles */
+.team figure {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.team figure img{transition: 0.5s ease-in-out;}
+.team figure:hover img{transform: scale(1.1);}
+.team figure figcaption .social{top: 0; left: 0; background: rgba(0,0,0,.6); padding: 15px; bottom: 0;}
+.team figure figcaption .social li a{color: #fff; font-size: 20px; margin-top: 10px; display: inline-block;}
+.team figure figcaption .caption{bottom: 0; left: 0; right: 0; background: rgba(0,0,0,.6); padding: 10px 15px; color: #fff;}
+.team figure figcaption .caption h6{margin-bottom: 0; font-weight: 600;}
+
+.faq .card{margin-bottom: 24px;}
+.faq .card .card-header{color: rgba(0, 0, 0, 0.64); padding: 15px; background: #fff;}
+.faq .card .card-header.collapsed i{ margin-top: 5px; transform: rotate(-180deg) !important; }
+.faq .card .card-header i{transition: 0.3s ease-in-out;}
+
+
+
+
+
+
+
+@media only screen and (min-width: 992px){
+  .navbar-expand-lg .navbar-nav .dropdown-menu{top: 68px; right: 0; left: auto}
+  .form-box{min-width: 330px;}
+}

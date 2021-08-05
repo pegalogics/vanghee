@@ -1,0 +1,142 @@
+
+	<header>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg px-0">
+			  	<a class="navbar-brand" [routerLink]="['/']"><img src="assets/images/logo.png" alt="Vanghee" style="max-width: 180px"></a>
+
+
+				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				   	<span class="fa fa-bars"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto main-menu">
+				      <li class="nav-item active">
+				        <a class="nav-link" [routerLink]="['/about']">About</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" [routerLink]="['/features']">Features</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" [routerLink]="['']">Why Vanghee</a>
+              </li>
+              <li class="nav-item">
+				        <a class="nav-link" [routerLink]="['']">News</a>
+              </li>
+              <li class="nav-item">
+				        <a class="nav-link" [routerLink]="['/faq']">Faq's</a>
+              </li>
+              <li class="nav-item">
+				        <a class="nav-link" [routerLink]="['/contact']">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+				        <a class="nav-link bordered-btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign Up</a>
+                <div class="dropdown-menu border-0 form-box">
+                  <form #signupData="ngForm" (ngSubmit)="submitData(signupData.value)">
+                    <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" class="form-control" name="name" ngModel required #name="ngModel">
+                    </div>
+                    <div class="form-group">
+                      <label>E-mail</label>
+                      <input type="email" class="form-control" name="email" ngModel>
+                    </div>
+                    <div class="form-group">
+                      <label>Mobile Number</label>
+                      <input type="tel" class="form-control" name="mobile" ngModel>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="solid-btn px-4 py-2 w-100" >Get Started</button>
+                    </div>
+                    <div class="text-center">
+                      <p class="mb-0">Already have an account? <a [routerLink]="['']" class="text-orange mx-0 font-weight-normal">Sign In</a></p>
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+				        <a class="nav-link solid-btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign In</a>
+                <div class="dropdown-menu border-0 form-box">
+                  <form #signupData="ngForm" (ngSubmit)="submitData(signupData.value)">
+                    
+                    <div class="form-group">
+                      <label>Mobile Number</label>
+                      <input type="tel" class="form-control" name="mobile" ngModel>
+                    </div>
+                    <div class="form-group mb-1">
+                      <label>Passowrd</label>
+                      <input type="password" class="form-control" name="password" ngModel>
+                    </div>
+                    <div class="mb-1 text-right">
+                      <a [routerLink]="['']" class="text-orange mx-0"><small>Forgot Password?</small></a>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-6">
+                          <input type="radio" name="userType" value="Accountant" id="accountant" checked class="mr-2"> 
+                          <label for="accountant">Accountant</label>
+                        </div>
+                        <div class="col-6">
+                          <input type="radio" name="userType" value="Oraganization" id="oraganization" class="mr-2">
+                          <label for="oraganization">Oraganization</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group text-center">
+                      <button type="submit" class="solid-btn px-5 py-2">Sign In</button>
+                    </div>
+                    <div class="text-center">
+                      <p class="mb-0">New User? <a [routerLink]="['']" class="text-orange mx-0 font-weight-normal">Sign Up</a></p>
+                    </div>
+                  </form>
+                </div>
+				      </li>
+				    </ul>
+				</div>
+			</nav>
+		</div>
+  </header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-5">
+    <div class="container pt-4">
+      <div class="row">
+        <div class="col-md-5 py-3 pr-md-5">
+          <img src="assets/images/logo.png" alt="Vanghee" style="max-width: 180px">
+          <p class="mb-0 mt-3"><strong>Vanghee,</strong> integrate your accounting system with India’s largest private sector bank.</p>
+        </div>
+        <div class="col-md-3 py-3 pl-md-5">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a [routerLink]="['about']">About Us</a></li>
+            <li><a [routerLink]="['']">Our Features</a></li>
+            <li><a [routerLink]="['']">FAQs</a></li>
+            <li><a [routerLink]="['']">Why Vanghee</a></li>
+            <li><a [routerLink]="['']">Privacy Policy</a></li>
+            <li><a [routerLink]="['']">Terms of use</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 py-3">
+          <h5>Follow Us </h5>
+          <p class="mt-3">Follow us on social links to be updated with new updates and upcoming features of Vanghee Banking</p>
+          <div class="social mt-4">
+            <a href="" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="" target="_blank"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-12 mt-5 text-center">
+          <p class="mb-0">
+            &copy;2021 Vanghee<br>
+            This is a product of Thilias Analytical Solutions Pvt Ltd
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
